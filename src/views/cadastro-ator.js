@@ -86,6 +86,10 @@ function CadastroAtor() {
     setQtdeOscar(dados.qtdeOscar);
   }
 
+  useEffect(() => {
+    buscar(); // eslint-disable-next-line
+  }, [id]);
+
   if (!dados) return null;
 
   return (
@@ -117,7 +121,7 @@ function CadastroAtor() {
               </FormGroup>
               <FormGroup label='DataNascimento: *' htmlFor='inputDataNascimento'>
                 <input
-                  type='text'
+                  type='date'
                   id='inputDataNascimento'
                   value={dataNascimento}
                   className='form-control'

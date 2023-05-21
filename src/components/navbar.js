@@ -30,13 +30,13 @@ function Navbar(props) {
             />
           </ul>
           <ul className='navbar-nav'>
-            <NavbarItem render='true' href='#' label='Cursos' />
+            <NavbarItem render='true' href='#' label='Filmes' />
           </ul>
           <ul className='navbar-nav'>
             <NavbarItem
               render='true'
               href='#'
-              label='Professores'
+              label='Diretores'
             />
           </ul>
           <ul className='navbar-nav'>
