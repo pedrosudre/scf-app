@@ -33,11 +33,10 @@ function Navbar(props) {
             <NavbarItem render='true' href='#' label='Filmes' />
           </ul>
           <ul className='navbar-nav'>
-            <NavbarItem
-              render='true'
-              href='#'
-              label='Diretores'
-            />
+            <NavbarItem render='true' href='/listagem-generos' label='Generos' />
+          </ul>
+          <ul className='navbar-nav'>
+            <NavbarItem render='true'href='#'label='Diretores' />
           </ul>
           <ul className='navbar-nav'>
             <NavbarItem render='true' href='/listagem-atores' label='Atores' />
