@@ -75,17 +75,27 @@ function CadastroAtor() {
     }
   }
 
-  async function buscar() {
-    await axios.get(`${baseURL}/${idParam}`).then((response) => {
-      setDados(response.data);
-    });
-    setId(dados.id);
-    setNome(dados.nome);
-    setNacionalidade(dados.nacionalidade);
-    setDataNascimento(dados.dataNascimento);
-    setQtdeOscar(dados.qtdeOscar);
-  }
 
+  async function buscar() {
+    try {
+      await axios.get(`${baseURL}/${idParam}`).then((response) => {
+        setDados(response.data);
+      });
+      setId(dados.id);
+      setNome(dados.nome);
+      setNacionalidade(dados.nacionalidade);
+      setDataNascimento(dados.dataNascimento);
+      setQtdeOscar(dados.qtdeOscar);
+    } catch (error) {
+      console.error(error);
+      // Aqui você pode tratar o erro de status 400 como desejar, por exemplo:
+      if (error.response && error.response.status === 400) {
+        console.log("Erro 400: Solicitação inválida.");
+        // Faça algo específico para lidar com o erro 400
+      }
+    }
+  }
+  
   useEffect(() => {
     buscar(); // eslint-disable-next-line
   }, [id]);
