@@ -9,6 +9,8 @@ import CadastroGenero from './views/cadastro-genero';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import CadastroDiretor from './views/cadastro-diretor';
 import ListagemDiretores from './views/listagem-diretores';
+import CadastroFilme from './views/cadastro-filme';
+import ListagemFilmes from './views/listagem-filmes';
 
 function Rotas(props) {
   return (
@@ -20,6 +22,9 @@ function Rotas(props) {
         <Route path='/listagem-generos' element={<ListagemGeneros />} />
         <Route path='/cadastro-diretores/:idParam?' element={<CadastroDiretor />} />
         <Route path='/listagem-diretores' element={<ListagemDiretores />} />
+        <Route path='/cadastro-filme/:idParam?' element={<CadastroFilme />} />
+        <Route path='/listagem-filmes' element={<ListagemFilmes />} />
+
 
       </Routes>
     </BrowserRouter>
