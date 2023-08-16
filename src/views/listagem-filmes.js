@@ -87,7 +87,7 @@ function ListagemFilmes() {
                     <tr key={dado.id}>
                       <td>{dado.nome}</td>
                       <td>{dado.nota}</td>
-                      <td>{dado.idDiretor}</td>
+                      <td>{dado.nomeDiretor}</td>
                       <td>
                         <Stack spacing={1} padding={0} direction='row'>
                           <IconButton

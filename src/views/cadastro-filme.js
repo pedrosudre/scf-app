@@ -131,7 +131,7 @@ useEffect(() => {
 
   return (
     <div className='container'>
-      <Card title='Cadastro de Diretor'>
+      <Card title='Cadastro de Filme'>
         <div className='row'>
           <div className='col-lg-12'>
             <div className='bs-component'>
