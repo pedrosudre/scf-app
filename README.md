@@ -1,4 +1,4 @@
-# Sistema de Controle de Filmes.
+# Sistema de Controle de Filmes
 
 Este é um projeto React que permite realizar operações CRUD (Create, Read, Update, Delete) em uma API de filmes.
 
